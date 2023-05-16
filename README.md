@@ -1,5 +1,5 @@
 # BlogAPI_Task
-## clone the above repo and install dependancy using command npm install
+## clone the above repo and install dependancy using command ==> npm install
 ## run ==> npm start
 ## Your server is run in==> localhost:5000
  
