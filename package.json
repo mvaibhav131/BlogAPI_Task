@@ -3,9 +3,11 @@
   "version": "1.0.0",
   "description": "creating the api is performing the crud operation with login and authentication system .",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "start": "nodemon --experimental-modules --es-module-specifier-resolution=node app.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest",
+    "test:watch":"jest --watch"
   },
   "keywords": [],
   "author": "",
@@ -17,5 +19,8 @@
     "jsonwebtoken": "^9.0.0",
     "mongoose": "^7.1.1",
     "nodemon": "^2.0.22"
+  },
+  "devDependencies": {
+    "supertest": "^6.3.3"
   }
 }
