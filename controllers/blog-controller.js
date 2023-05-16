@@ -109,3 +109,17 @@ export const getByUserId =async (req,res,next)=>{
     }
     return res.status(200).json({blogs:userBlogs})
 };
+
+export const getByKeyword=async (req,res,next)=>{
+    const keywords =req.body;
+    let blog;
+    try{
+        blog=await Blog.find(keywords);
+    }catch(err){
+        return console.log(err);
+    }
+    if(!blog){
+        return res.status(404).json({messaage:"No Blog Found"});
+    }
+    return res.status(200).json({blog});
+};
