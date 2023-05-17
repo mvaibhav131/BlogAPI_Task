@@ -1,11 +1,11 @@
 # BlogAPI_Task
-## clone the above repo and install dependancy using command ==> npm install
-## run ==> npm start
-## Your server is run in==> localhost:5000
+## clone the above repo and install dependancy using command ==> `npm install`
+## run ==>`npm start`
+## Your server is run in==> `localhost:5000`
  
 ### to check the api routes with foll url
-### Base Url for blogs: localhost:5000/blogs
-### Base Url for user: localhost:5000/user
+### Base Url for blogs: `localhost:5000/blogs`
+### Base Url for user: `localhost:5000/user`
 
 # Routes for Blogs:
 
@@ -21,3 +21,6 @@
 ## get("/",getAllUser ); // Get all user list 
 ## post("/signup",signup); // Sign up user
 ## post("/login",login); // Login User
+
+# TestCases is added for both user and blogs
+## To Run TestCases run command ==> `npm run test`
